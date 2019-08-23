@@ -1,0 +1,138 @@
+﻿*, body {
+
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+header {
+
+    width: 100%;
+    height: 80px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+header .iconMenu {
+
+    width: 30px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to bottom, white, white 20%, black 20%, black 40%, white 40%, white 60%, black 60%, black 80%, white 80%, white 100%);
+    margin-right: 20px;
+}
+
+header a{
+
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.contenedorNumero1 {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /*leer sobre esta propiedad mas adelante*/
+}
+
+.contenedorNumero1:before {
+
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.contenedorNumero1--visible {
+
+    pointer-events: auto; /*leer sobre esta propiedad mas adelante*/
+}
+
+.contenedorNumero1--visible:before {
+
+    opacity: 1;
+}
+
+.contenedorNumero1--visible .contenedorNumero2 {
+
+    transform: none;
+}
+
+.contenedorNumero2 {
+
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 2px 0px 12px rgba(0,0,0,0.8);
+    transform: translateX(-105%);
+    transition: transform .3s;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+.menu {
+
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+}
+
+.iten {
+
+    overflow: hidden;
+}
+
+.btn {
+
+    display: block;
+    padding: 16px 20px;
+    text-decoration: none;
+    color: #000;
+    background: #f2f2f2;
+}
+
+footer {
+
+    text-align: center;
+    font-size: 16px;
+}
+
+/*INICIO SCROLL BAR*/
+::-webkit-scrollbar {
+
+    width: 10px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+
+    border-radius: 0px;
+    background: #33637F;
+}
+/*FIN SCROLL BAR*/

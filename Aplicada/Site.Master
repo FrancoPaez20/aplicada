@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Aplicada.SiteMaster" %>
+﻿    <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Aplicada.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
+    <title>Home - Aplicada</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -19,11 +19,11 @@
 
 </head>
 <body>
-    <form runat="server">
+    <%--<form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%
+                <%--Framework Scripts--%
                 <asp:ScriptReference Name="MsAjaxBundle" />
                 <asp:ScriptReference Name="jquery" />
                 <asp:ScriptReference Name="bootstrap" />
@@ -36,57 +36,66 @@
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
+                <%--Site Scripts--%
             </Scripts>
-        </asp:ScriptManager>
+        </asp:ScriptManager> --%>
 
-	    <header>
+	
+	<header>
+
+		<button id="iconMenu1" class="showIconMenu"></button>
 		
-            <a href="#">Aplicada</a>
-		    <button id="iconMenu1" class="iconMenu showIconMenu"></button>
+	</header>
 
-	    </header>
+	<aside class="contenedorNumero1">
 
-        <aside class="contenedorNumero1">
-		
 		<nav class="contenedorNumero2">
-
+		
+			<div class="cabecera">
+		
+				<button id="iconMenu2" class="hideIconMenu"></button>
+		
+			</div>
+		
 			<div class="menu">
+                <ul>
+				    <li class="item" id='index'>
+					    <a href="index.html" class="btn">INICIO</a>
+				    </li>
 				
-				<li class="item" id='recetas'>
-				
-					<a href="#recetas" class="btn">RECIBIR AUTO</a>
+				    <li class="item" id='recetas'>				
+					    <a href="recetas.html" class="btn">RECETAS</a>
+				    </li>
 
-				</li>
+				    <li class="item" id="estudiantes">
+					    <a href="#estudiantes" class="btn">ESTUDIANTES</a>
+				    </li>
 
-				<li class="item" id="estudiantes">
-				
-					<a href="#estudiantes" class="btn">AUTOS RECIBIDOS</a>
-				
-				</li>
+				    <li class="item" id="trabajos">
+					    <a href="#trabajos" class="btn">TRABAJOS</a>
+				    </li>
 
-				<li class="item" id="trabajos">
-					
-				</li>
+				    <li class="item" id='comercios'>
+					    <a href="comercios.html" class="btn">COMERCIOS</a>
+				    </li>
 
-				<li class="item" id='comercios'>
-				
-					<a href="#comercios" class="btn">AUTOS PARA ENTREGAR</a>
+				    <li class="item" id='eventos'>
+					    <a href="eventos.html" class="btn">EVENTOS</a>
+				    </li>
 
-				</li>
+				    <li class="item" id='tramites'>
+					    <a href="tramites.html" class="btn">TRAMITES</a>
+				    </li>
 
-				<li class="item" id='eventos'>
-				
-					<a href="#eventos" class="btn">MI AUTO</a>
-
-				</li>
-
+				    <li class="item" id='contacto'>
+					    <a href="contacto.html" class="btn">CONTACTANOS</a>
+				    </li>
+                </ul>
 			</div>
 
 		</nav>
 
 	</aside>
-
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
@@ -96,9 +105,6 @@
             <p>&copy; <%: DateTime.Now.Year %> - TODOS LOS DERECHOS RESERVADOS</p>
         </footer>
 
-    </form>
-
-    <asp:ScriptReference language="javascript" type="text/javascript" Name="menu.js" Assembly="System.Web" Path="~/js/menu.js" />
-    <script src="~/js/menu.js" language="javascript" type="text/javascript"></script>
+    <script src="js/menu.js" language="javascript" type="text/javascript"></script>
 </body>
 </html>

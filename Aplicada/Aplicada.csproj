@@ -111,6 +111,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css\master.css" />
+    <Content Include="css\login.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -124,6 +125,9 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="nuevoAuto.aspx" />
+    <Content Include="verAutos.aspx" />
+    <Content Include="autosReparados.aspx" />
+    <Content Include="miAuto.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="js\menu.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -201,6 +205,27 @@
     </Compile>
     <Compile Include="nuevoAuto.aspx.designer.cs">
       <DependentUpon>nuevoAuto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="verAutos.aspx.cs">
+      <DependentUpon>verAutos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="verAutos.aspx.designer.cs">
+      <DependentUpon>verAutos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="autosReparados.aspx.cs">
+      <DependentUpon>autosReparados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="autosReparados.aspx.designer.cs">
+      <DependentUpon>autosReparados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="miAuto.aspx.cs">
+      <DependentUpon>miAuto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="miAuto.aspx.designer.cs">
+      <DependentUpon>miAuto.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

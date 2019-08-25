@@ -13,9 +13,12 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="~/css/master.css" rel="stylesheet" />
+    <link href="~/css/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/nuevoAuto.css">
+    <link rel="stylesheet" href="~/css/tablas.css">
+    <link rel="stylesheet" href="~/css/miAuto.css">
 
 </head>
 <body>
@@ -43,6 +46,7 @@
 	
 	<header>
 
+        <p class="titulo">APLICADA</p>
 		<button id="iconMenu1" class="showIconMenu"></button>
 		
 	</header>
@@ -53,43 +57,31 @@
 		
 			<div class="cabecera">
 		
-				<button id="iconMenu2" class="hideIconMenu"></button>
+				<button id="iconMenu2" class="hideIconMenu">X</button>
 		
 			</div>
 		
 			<div class="menu">
                 <ul>
-				    <li class="item" id='index'>
-					    <a href="index.html" class="btn">INICIO</a>
+				    <li class="item">
+                        <a runat="server" href="~/" class="btn">Inicio</a>
 				    </li>
-				
-				    <li class="item" id='recetas'>				
-					    <a href="recetas.html" class="btn">RECETAS</a>
-				    </li>
-
-				    <li class="item" id="estudiantes">
-					    <a href="#estudiantes" class="btn">ESTUDIANTES</a>
-				    </li>
-
-				    <li class="item" id="trabajos">
-					    <a href="#trabajos" class="btn">TRABAJOS</a>
-				    </li>
-
-				    <li class="item" id='comercios'>
-					    <a href="comercios.html" class="btn">COMERCIOS</a>
-				    </li>
-
-				    <li class="item" id='eventos'>
-					    <a href="eventos.html" class="btn">EVENTOS</a>
-				    </li>
-
-				    <li class="item" id='tramites'>
-					    <a href="tramites.html" class="btn">TRAMITES</a>
-				    </li>
-
-				    <li class="item" id='contacto'>
-					    <a href="contacto.html" class="btn">CONTACTANOS</a>
-				    </li>
+                    
+                    <li class="item">
+                        <a runat="server" href="~/nuevoAuto" class="btn">Recibir Auto</a>
+                    </li>
+                    
+                    <li class="item">
+                        <a runat="server" href="~/verAutos" class="btn">Autos para reparar</a>
+                    </li>
+                    
+                    <li class="item">
+                        <a runat="server" href="~/autosReparados" class="btn">Autos reparados</a>
+                    </li>
+                    
+                    <li class="item">
+                        <a runat="server" href="~/miAuto" class="btn">Mi auto</a>
+                    </li>
                 </ul>
 			</div>
 
@@ -101,10 +93,11 @@
             </asp:ContentPlaceHolder>
         </div>
         
-        <footer>
-            <p>&copy; <%: DateTime.Now.Year %> - TODOS LOS DERECHOS RESERVADOS</p>
+        <footer id="footer">
+            <p>&copy; <%: DateTime.Now.Year %> - TODOS LOS DERECHOS RESERVADOS (mentira)</p>
         </footer>
 
     <script src="js/menu.js" language="javascript" type="text/javascript"></script>
+
 </body>
 </html>

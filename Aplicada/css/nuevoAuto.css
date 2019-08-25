@@ -1,0 +1,123 @@
+.wrap{
+
+	max-width: 1000px;
+	width: 900px;
+	height: auto;
+	background: #f2f2f2;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	margin: 50px 0;
+	padding: 50px;
+  	overflow-x: scroll;
+
+}
+
+.parte1, .parte2{
+
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.seccion h2{
+
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 60px;
+}
+
+.seccion input[type=text]{
+	
+	width: 260px;
+	padding: 10px 0;
+	margin-bottom: 40px;
+	border: none;
+	background: none;
+	color: #000;
+	font-size: 18px;
+	border-bottom: 3px solid #2C383F;
+	font-size: 16px;
+}
+
+.parte3{
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.parte3 .subSeccion input[type=checkbox]{
+
+	margin: 10px 0;
+}
+
+.precioTotal{
+
+	margin: 40px 0;
+}
+
+.btnNuevoAuto{
+
+	text-decoration: none;
+	color: #2C383F;
+	background: none;
+	border: 2px solid #2C383F;
+	border-radius: 50px;
+	padding: 10px 30px;
+	margin-bottom: 40px;
+}
+
+.btnNuevoAuto:hover{
+
+	transition: .5s;
+	background: #2C383F;
+	color: #fff;
+}
+
+@media screen and (max-width: 425px){
+
+	.wrap{
+
+		margin:10px 0;
+		padding: 0;
+		min-width: 300px;
+		width: auto;
+	}
+
+	.precioTotal{
+
+		margin: 40px 0;
+	}
+}
